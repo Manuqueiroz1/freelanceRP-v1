@@ -16,6 +16,7 @@ export default withAuth(
           '/register/empresa',
           '/register/freelancer',
           '/forgot-password',
+          '/complete-profile',
           '/projetos',
           '/como-funciona',
           '/termos-uso',
