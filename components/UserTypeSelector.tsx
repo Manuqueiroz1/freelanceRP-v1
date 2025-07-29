@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Link from 'next/link'
 import { Building, User } from 'lucide-react'
 
 export default function UserTypeSelector() {
@@ -19,7 +18,7 @@ export default function UserTypeSelector() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Company Option */}
-          <Link
+          <a
             href="/login?type=empresa"
             className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 hover:shadow-xl hover:scale-105 transition-all duration-300 group"
           >
@@ -44,10 +43,10 @@ export default function UserTypeSelector() {
                 Contratar Freelancers
               </div>
             </div>
-          </Link>
+          </a>
 
           {/* Freelancer Option */}
-          <Link
+          <a
             href="/login?type=freelancer"
             className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 hover:shadow-xl hover:scale-105 transition-all duration-300 group"
           >
@@ -72,7 +71,7 @@ export default function UserTypeSelector() {
                 Encontrar Projetos
               </div>
             </div>
-          </Link>
+          </a>
         </div>
 
         <div className="text-center mt-12">
