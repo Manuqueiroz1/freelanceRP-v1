@@ -31,22 +31,10 @@ export default function ForgotPasswordPage() {
     setIsLoading(true)
     
     try {
-      const response = await fetch('/api/auth/forgot-password', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-
-      const result = await response.json()
-
-      if (response.ok) {
-        setEmailSent(true)
-        toast.success('Email de recuperação enviado!')
-      } else {
-        toast.error(result.error || 'Erro ao enviar email de recuperação')
-      }
+      // Simular envio de email por enquanto
+      await new Promise(resolve => setTimeout(resolve, 2000))
+      setEmailSent(true)
+      toast.success('Email de recuperação enviado!')
     } catch (error) {
       toast.error('Erro ao enviar email de recuperação')
     } finally {

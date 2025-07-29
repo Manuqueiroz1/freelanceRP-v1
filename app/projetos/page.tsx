@@ -115,7 +115,7 @@ export default function ProjetosPage() {
               </p>
             </div>
             <Link
-              href="/login"
+              href="/login?type=freelancer"
               className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
               Candidatar-se
@@ -313,10 +313,10 @@ export default function ProjetosPage() {
 
                   <div className="mt-6 lg:mt-0 lg:ml-6 flex flex-col space-y-3">
                     <Link
-                      href={`/projeto/${projeto.id}`}
+                      href="/login?type=freelancer"
                       className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-center"
                     >
-                      Ver Detalhes
+                      Candidatar-se
                     </Link>
                     <p className="text-xs text-gray-500 text-center">
                       Publicado em {new Date(projeto.created_at).toLocaleDateString()}

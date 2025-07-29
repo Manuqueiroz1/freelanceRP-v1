@@ -64,13 +64,13 @@ export default function HomePage() {
             </nav>
             <div className="flex items-center space-x-4">
               <Link
-                href="/login"
+                href="/login?type=empresa"
                 className="text-gray-600 hover:text-gray-900 font-medium"
               >
                 Entrar
               </Link>
               <Link
-                href="/login"
+                href="/login?type=empresa"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Começar
@@ -95,14 +95,14 @@ export default function HomePage() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Link
-                href="/login"
+                href="/login?type=empresa"
                 className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg flex items-center justify-center"
               >
                 <Building className="w-5 h-5 mr-2" />
                 Sou uma Empresa
               </Link>
               <Link
-                href="/login"
+                href="/login?type=freelancer"
                 className="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 transition-colors font-semibold text-lg flex items-center justify-center"
               >
                 <User className="w-5 h-5 mr-2" />
@@ -274,13 +274,13 @@ export default function HomePage() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/login"
+              href="/login?type=empresa"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors font-semibold text-lg"
             >
               Contratar Freelancers
             </Link>
             <Link
-              href="/login"
+              href="/login?type=freelancer"
               className="bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-colors font-semibold text-lg"
             >
               Encontrar Projetos
@@ -303,7 +303,7 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Para Empresas</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/login" className="hover:text-white">Cadastrar Empresa</Link></li>
+                <li><Link href="/register/empresa" className="hover:text-white">Cadastrar Empresa</Link></li>
                 <li><Link href="/projetos" className="hover:text-white">Publicar Projeto</Link></li>
                 <li><Link href="/como-funciona" className="hover:text-white">Como Funciona</Link></li>
               </ul>
@@ -312,7 +312,7 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Para Freelancers</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/login" className="hover:text-white">Cadastrar-se</Link></li>
+                <li><Link href="/register/freelancer" className="hover:text-white">Cadastrar-se</Link></li>
                 <li><Link href="/projetos" className="hover:text-white">Buscar Projetos</Link></li>
                 <li><Link href="/como-funciona" className="hover:text-white">Dicas de Sucesso</Link></li>
               </ul>
