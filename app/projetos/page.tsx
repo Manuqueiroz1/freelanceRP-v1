@@ -118,7 +118,7 @@ export default function ProjetosPage() {
               href="/login?type=freelancer"
               className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
-              Candidatar-se
+              Fazer Login para Candidatar-se
             </Link>
           </div>
         </div>
@@ -313,7 +313,7 @@ export default function ProjetosPage() {
 
                   <div className="mt-6 lg:mt-0 lg:ml-6 flex flex-col space-y-3">
                     <Link
-                      href="/login?type=freelancer"
+                      href={`/login?type=freelancer`}
                       className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-center"
                     >
                       Candidatar-se

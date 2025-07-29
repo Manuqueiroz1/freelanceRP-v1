@@ -64,13 +64,13 @@ export default function HomePage() {
             </nav>
             <div className="flex items-center space-x-4">
               <Link
-                href="/login?type=empresa"
+                href="/login"
                 className="text-gray-600 hover:text-gray-900 font-medium"
               >
                 Entrar
               </Link>
               <Link
-                href="/login?type=empresa"
+                href="/escolher-tipo"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Começar
@@ -303,7 +303,7 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Para Empresas</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/register/empresa" className="hover:text-white">Cadastrar Empresa</Link></li>
+                <li><Link href="/login?type=empresa" className="hover:text-white">Cadastrar Empresa</Link></li>
                 <li><Link href="/projetos" className="hover:text-white">Publicar Projeto</Link></li>
                 <li><Link href="/como-funciona" className="hover:text-white">Como Funciona</Link></li>
               </ul>
@@ -312,7 +312,7 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Para Freelancers</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/register/freelancer" className="hover:text-white">Cadastrar-se</Link></li>
+                <li><Link href="/login?type=freelancer" className="hover:text-white">Cadastrar-se</Link></li>
                 <li><Link href="/projetos" className="hover:text-white">Buscar Projetos</Link></li>
                 <li><Link href="/como-funciona" className="hover:text-white">Dicas de Sucesso</Link></li>
               </ul>

@@ -143,13 +143,13 @@ export default function LoginPage() {
       <div className="max-w-md w-full">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center mb-8">
-            <a 
+            <Link 
               href="/"
               className={`inline-flex items-center ${colors.link} mb-4`}
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
               Voltar ao início
-            </a>
+            </Link>
             
             <div className={`w-16 h-16 ${colors.iconBg} rounded-full flex items-center justify-center mx-auto mb-4`}>
               {getIcon()}
@@ -283,12 +283,12 @@ export default function LoginPage() {
                     Lembrar de mim
                   </label>
                 </div>
-                <a
+                <Link
                   href="/forgot-password"
                   className={`text-sm ${colors.link}`}
                 >
                   Esqueceu a senha?
-                </a>
+                </Link>
               </div>
 
               <button
@@ -419,13 +419,13 @@ export default function LoginPage() {
 
               <p className="text-xs text-gray-500 text-center">
                 Ao criar sua conta, você concorda com nossos{' '}
-                <a href="/termos-uso" className="text-blue-600 hover:text-blue-700">
+                <Link href="/termos-uso" className="text-blue-600 hover:text-blue-700">
                   Termos de Uso
-                </a>{' '}
+                </Link>{' '}
                 e{' '}
-                <a href="/politica-privacidade" className="text-blue-600 hover:text-blue-700">
+                <Link href="/politica-privacidade" className="text-blue-600 hover:text-blue-700">
                   Política de Privacidade
-                </a>
+                </Link>
               </p>
             </form>
           )}
@@ -437,7 +437,7 @@ export default function LoginPage() {
                 Tipo de conta errado?
               </p>
               <div className="flex space-x-2">
-                <a
+                <Link
                   href="/login?type=empresa"
                   className={`flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors text-center ${
                     userType === 'empresa' ? 'bg-blue-50 border-blue-300 text-blue-700' : 'text-gray-600'
@@ -445,8 +445,8 @@ export default function LoginPage() {
                 >
                   <Building className="w-4 h-4 inline mr-1" />
                   Empresa
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/login?type=freelancer"
                   className={`flex-1 px-3 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors text-center ${
                     userType === 'freelancer' ? 'bg-green-50 border-green-300 text-green-700' : 'text-gray-600'
@@ -454,7 +454,7 @@ export default function LoginPage() {
                 >
                   <User className="w-4 h-4 inline mr-1" />
                   Freelancer
-                </a>
+                </Link>
               </div>
             </div>
           )}
